@@ -1,1 +1,215 @@
 <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnerCircle:FORUN</title>
+    <!--bootstrap css cdn link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <!--our css link-->
+    <link rel="stylesheet" href="../common.css">  
+    <link rel="stylesheet" href="forum.css">   
+</head>
+
+<body>
+    <!--bootstrap js cdn import-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script></head>
+    <!--bootstrap js cdn end -->
+
+    <!---navibar start-->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand brand" href="index.html">InnerCircle</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMain">
+            <ul class="navbar-nav ms-auto gap-lg-2">
+                <li class="nav-item"><a class="nav-link" href="../main/index.html">MAIN</a></li>
+                <li class="nav-item"><a class="nav-link active" href="../forum/forum.html">FORUM</a></li>
+                <li class="nav-item"><a class="nav-link" href="../resource/resource.html">RESOURCE</a></li>
+                <li class="nav-item"><a class="nav-link" href="../profile/profile.html">PROFILE</a></li>
+                <li class="nav-item ms-lg-3"><a class="btn btn-accent" href="../index.html">LOG OUT</a></li>
+            </ul>
+            </div>
+        </div>
+    </nav>    
+    <!---navibar end-->
+    <!---main start-->
+    <main>
+        <!-- forum banner start -->
+        <div class="banner forum">                      
+            <p class="bannerText">FORUM<p> 
+            <p class="bannerText_Sub">Feel free to talk about your hobbies and share your experiences</p>
+        </div>        
+        <!-- forum banner end-->   
+    
+        <!-- left filter zone start -->
+        <div class="container py-5" style="background-color:#fdf8f0;">
+            <div class="row g-4">
+                <div class="col-lg-3">
+                    <div class="sidebar-card mb-3">
+                        <h6 class="fw-bold mb-3">Category Filter</h6>
+                        <div class="d-flex flex-column gap-2" id="forumFilters">
+                            <button class="filter-btn active" data-cat="ALL" onclick="filterPosts('ALL')">• ALL</button>
+                            <button class="filter-btn" data-cat="READING" onclick="filterPosts('READING')">• READING</button>
+                            <button class="filter-btn" data-cat="ARTS" onclick="filterPosts('ARTS')">• ARTS & PHOTO</button>
+                            <button class="filter-btn" data-cat="MUSIC" onclick="filterPosts('MUSIC')">• MUSIC</button>
+                            <button class="filter-btn" data-cat="TECH" onclick="filterPosts('TECH')">• TECH & CODING</button>
+                            <button class="filter-btn" data-cat="SPORTS" onclick="filterPosts('SPORTS')">• SPORTS & FITNESS</button>
+                            <button class="filter-btn" data-cat="GAMING" onclick="filterPosts('GAMING')">• GAMING</button>
+                        </div>
+                    </div>      
+                </div>
+                <!-- left filter zone end -->
+                <!-- forum list start -->
+                <div class="col-lg-9">
+                    <!-- reading -->
+                    <div class="forum-category">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>                           
+                                    <th colspan="4" style="width: 50%;">
+                                        <p class="forum-card-th">Reading</p>
+                                    </th>                           
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="forum-card">
+                                    <td>
+                                        <img src="image/avatar1.png" class="avatar">
+                                    </td>
+                                    <td>
+                                        <a class="forum-card-title">BlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlah</a>
+                                    </td>
+                                    <td>
+                                        <p class="forum-card-sub">BookWorm_Ji</p>
+                                    </td>
+                                    <td>
+                                    <span class="forum-card-sub">💬 23 &nbsp; 👍 89</span>
+                                    </td>
+                                </tr>
+                                <tr class="forum-card">                            
+                                    <td colspan="3">
+                                        <a class="forum-card-content" >BlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlah</a>
+                                    </td>
+                                    <td>
+                                        <p class="forum-card-sub"> 26/MAR/2026 09:00:00</p>
+                                    </td>                            
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- picture -->
+                    <div class="forum-category">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>                           
+                                    <th colspan="4" style="width: 50%;">
+                                        <p class="forum-card-th">PICTURE</p>
+                                    </th>                           
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="forum-card">
+                                    <td>
+                                        <img src="image/avatar2.png" class="avatar">
+                                    </td>
+                                    <td>
+                                        <a class="forum-card-title">BlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlah</a>
+                                    </td>
+                                    <td>
+                                        <p class="forum-card-sub">PastelDreamer</p>
+                                    </td>
+                                    <td>
+                                    <span class="forum-card-sub">💬 100 &nbsp; 👍 300</span>
+                                    </td>
+                                </tr>
+                                <tr class="forum-card">                            
+                                    <td colspan="3">
+                                        <a class="forum-card-content">BlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlah</a>
+                                    </td>
+                                    <td>
+                                        <p class="forum-card-sub"> 26/FEB/2026 23:15:30</p>
+                                    </td>                            
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- music -->
+                    <div class="forum-category">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>                           
+                                    <th colspan="4" style="width: 50%;">
+                                        <p class="forum-card-th">MUSIC</p>
+                                    </th>                           
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="forum-card">
+                                    <td>
+                                        <img src="image/avatar3.png" class="avatar">
+                                    </td>
+                                    <td>
+                                        <a class="forum-card-title">BlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlah</a>
+                                    </td>
+                                    <td>
+                                        <p class="forum-card-sub">GuitarDreams</p>
+                                    </td>
+                                    <td>
+                                    <span class="forum-card-sub">💬 50 &nbsp; 👍 1000</span>
+                                    </td>
+                                </tr>
+                                <tr class="forum-card">                            
+                                    <td colspan="3">
+                                        <a class="forum-card-content">BlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlah</a>
+                                    </td>
+                                    <td>
+                                        <p class="forum-card-sub"> 15/JAN/2026 20:15:30</p>
+                                    </td>                            
+                                </tr>
+                                <tr class="forum-card">
+                                    <td>
+                                        <img src="image/avatar4.png" class="avatar">
+                                    </td>
+                                    <td>
+                                        <a class="forum-card-title">BlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlah</a>
+                                    </td>
+                                    <td>
+                                        <p class="forum-card-sub">VilolineDreams</p>
+                                    </td>
+                                    <td>
+                                    <span class="forum-card-sub">💬 30 &nbsp; 👍 11</span>
+                                    </td>
+                                </tr>
+                                <tr class="forum-card">                            
+                                    <td colspan="3">
+                                        <a class="forum-card-content">BlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlah</a>
+                                    </td>
+                                    <td>
+                                        <p class="forum-card-sub"> 1/JAN/2026 10:15:30</p>
+                                    </td>                            
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- forum list end -->
+            </div>
+        </div>
+    </main>
+    <!---main end-->
+    <footer class="footer">
+        <div class="container">
+            <p class="text-center mb-0">&copy; 2026 InnerCircle. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
