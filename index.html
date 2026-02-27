@@ -9,10 +9,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     
     <!--our css link-->
-    <link rel="stylesheet" href="../common.css">  
-    <link rel="stylesheet" href="../forum/forum.css">   
+    <link rel="stylesheet" href="common.css">  
+    <link rel="stylesheet" href="index.css">   
 </head>
-
 <body>
     <!--bootstrap js cdn import-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script></head>
@@ -25,23 +24,22 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
             <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navMain">
-            <ul class="navbar-nav ms-auto gap-lg-2">
-                <li class="nav-item"><a class="nav-link active" href="../main/index.html">MAIN</a></li>
-                <li class="nav-item"><a class="nav-link " href="../forum/forum.html">FORUM</a></li>
-                <li class="nav-item"><a class="nav-link" href="../resource/resource.html">RESOURCE</a></li>
-                <li class="nav-item"><a class="nav-link" href="../profile/profile.html">PROFILE</a></li>
-                <li class="nav-item ms-lg-3"><a class="btn btn-accent" href="../index.html">SIGN OUT</a></li>
-            </ul>
-            </div>
         </div>
     </nav>    
     <!---navibar end-->
+
+    <div class="landing-container">
+
     <!---main start-->
-    <main>
-       <p>~~~~Coding html 5 + CSS + Bootstrap according to each task.~~~~</p>
+    <main class="main-content">
+       <div class="hero-section">
+            <h2 class="title">Welcome to InnerCircle</h2>
+            <p class="subtitle">Share your hobbies</p>
+            <button class="explore-btn">Get Started</button>
+        </div>
     </main>
     <!---main end-->
+
     <footer class="footer">
         <div class="container">
             <p class="text-center mb-0">&copy; 2026 InnerCircle. All rights reserved.</p>
@@ -49,5 +47,4 @@
     </footer>
 
 </body>
-
 </html>
