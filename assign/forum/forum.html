@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum - InnerCircle</title>
+    <!--bootstrap css cdn link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!--our css link-->
+    <link rel="stylesheet" href="../common.css">  
+    <link rel="stylesheet" href="forum.css">   
+</head>
+
+<body>
+    <!--bootstrap js cdn link start-->    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<!--bootstrap js cdn link end -->
+    <!---navibar start-->      
+    <nav class="navbar navbar-expand-md fixed-top">   
+        <div class="container-fluid px-4">
+            <a class="navbar-brand brand" href="../main/main.html">InnerCircle</a>
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+                <ul class="navbar-nav gap-3 align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="../main/main.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../forum/forum.html">Forum</a></li>                    
+                    <li class="nav-item"><a class="nav-link" href="../resource/resource.html">Resource</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../profile/profile.html">Profile</a></li>              
+                    <li class="nav-item"><a class="btn nav-btn" href="../index.html">Sign out</a></li>
+                </ul>
+            </div>
+        </div>        
+    </nav>
+    <!---navibar end-->
+    <!---main start-->
+    <main class="forum-main">        
+        <section class="forum-banner">
+            <div class="banner-content text-center">
+                <h1>FORUM</h1>
+            </div>
+        </section>
+    
+        <div class="container-xl my-5 px-4">         
+            <div class="row g-4">
+                <!--forum-category start-->
+                <aside class="col-12 col-md-3">
+                    <div class="forum-category">
+                        <h3>Category</h3>
+                        <ul class="forum-category-list">
+                            <li><a data-category="ALL"              onclick="filterCategory(this)" class="active">• ALL</a></li>
+                            <li><a data-category="READING"          onclick="filterCategory(this)">• READING</a></li>
+                            <li><a data-category="ARTS & PHOTO"     onclick="filterCategory(this)">• ARTS & PHOTO</a></li>
+                            <li><a data-category="MUSIC"            onclick="filterCategory(this)">• MUSIC</a></li>
+                            <li><a data-category="TECH & CODING"    onclick="filterCategory(this)">• TECH & CODING</a></li>
+                            <li><a data-category="SPORTS & FITNESS" onclick="filterCategory(this)">• SPORTS & FITNESS</a></li>
+                            <li><a data-category="GAMING"           onclick="filterCategory(this)">• GAMING</a></li>
+                        </ul>
+                    </div>
+                </aside>
+                <!--forum-category end-->
+
+              
+                <div class="col-12 col-md-9">
+                    <div class="forum-list-area">                        
+                        <!--write button start -->
+                        <div class="btn-write-post mb-3">
+                            <button class="btn-write" onclick="location.href='#'">Write Post</button>
+                        </div>
+                        <!--write button end -->
+
+                        <!-- forum-card start -->
+                        <div class="forum-card mt-3" data-category="READING">
+                            <div class="forum-card-category">READING</div>
+                            <div class="forum-card-body">
+                                <img src="image/avatar1.png" alt="avatar" class="forum-card-avatar">
+                                <div class="forum-card-info">
+                                    <div class="forum-header-row">
+                                        <span class="forum-card-title">Post Title(Reading)</span>
+                                        <div class="forum-card-sub">
+                                            <span class="author">User Id(Reading)</span>
+                                            <span class="stats">💬 23 &nbsp; 👍 89</span>
+                                        </div>
+                                    </div>
+                                    <div class="forum-card-content">BlahBlahBlahBlahBlah</div>
+                                    <div class="forum-card-date">26/MAR/2026 09:00:00</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="forum-card mt-3" data-category="READING">
+                            <div class="forum-card-category">READING</div>
+                            <div class="forum-card-body">
+                                <img src="image/avatar1.png" alt="avatar" class="forum-card-avatar">
+                                <div class="forum-card-info">
+                                    <div class="forum-header-row">
+                                        <span class="forum-card-title">Post Title(Reading)</span>
+                                        <div class="forum-card-sub">
+                                            <span class="author">User Id(Reading)</span>
+                                            <span class="stats">💬 23 &nbsp; 👍 89</span>
+                                        </div>
+                                    </div>
+                                    <div class="forum-card-content">BlahBlahBlahBlahBlah</div>
+                                    <div class="forum-card-date">26/MAR/2026 09:00:00</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="forum-card mt-3" data-category="READING">
+                            <div class="forum-card-category">READING</div>
+                            <div class="forum-card-body">
+                                <img src="image/avatar1.png" alt="avatar" class="forum-card-avatar">
+                                <div class="forum-card-info">
+                                    <div class="forum-header-row">
+                                        <span class="forum-card-title">Post Title(Reading)</span>
+                                        <div class="forum-card-sub">
+                                            <span class="author">User Id(Reading)</span>
+                                            <span class="stats">💬 23 &nbsp; 👍 89</span>
+                                        </div>
+                                    </div>
+                                    <div class="forum-card-content">BlahBlahBlahBlahBlah</div>
+                                    <div class="forum-card-date">26/MAR/2026 09:00:00</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="forum-card mt-3" data-category="ARTS & PHOTO">
+                            <div class="forum-card-category">ARTS & PHOTO</div>
+                            <div class="forum-card-body">
+                                <img src="image/avatar2.png" alt="avatar" class="forum-card-avatar">
+                                <div class="forum-card-info">
+                                    <div class="forum-header-row">                                        
+                                        <span class="forum-card-title">Post Title(Art & Photo)</span>
+                                        <div class="forum-card-sub">
+                                            <span class="author">User Id(Art & Photo)</span>
+                                            <span class="stats">💬 100 &nbsp; 👍 300</span>
+                                        </div>
+                                    </div>
+                                    <div class="forum-card-content">BlahBlahBlahBlah</div>
+                                    <div class="forum-card-date">26/FEB/2026 23:15:30</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="forum-card mt-3" data-category="MUSIC">
+                            <div class="forum-card-category">MUSIC</div>
+                            <div class="forum-card-body">
+                                <img src="image/avatar3.png" alt="avatar" class="forum-card-avatar">
+                                <div class="forum-card-info">
+                                    <div class="forum-header-row">
+                                        <span class="forum-card-title">Post Title(Music)</span>
+                                        <div class="forum-card-sub">
+                                            <span class="author">User Id(Music)</span>
+                                            <span class="stats">💬 100 &nbsp; 👍 300</span>
+                                        </div>
+                                    </div>
+                                    <div class="forum-card-content">BlahBlahBlahBlah</div>
+                                    <div class="forum-card-date">26/FEB/2026 23:15:30</div>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="forum-card mt-3" data-category="TECH & CODING">
+                            <div class="forum-card-category">TECH & CODING</div>
+                            <div class="forum-card-body">                                
+                                <div class="forum-card-info">                                    
+                                    <div class="forum-card-content">Nothing Found</div>                                    
+                                </div>
+                            </div>
+                        </div>
+                         <div class="forum-card mt-3" data-category="SPORTS & FITNESS">
+                            <div class="forum-card-category">SPORTS & FITNESS</div>
+                            <div class="forum-card-body">                                
+                                <div class="forum-card-info">                                    
+                                    <div class="forum-card-content">Nothing Found</div>                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="forum-card mt-3" data-category="GAMING">
+                            <div class="forum-card-category">GAMING</div>
+                            <div class="forum-card-body">                                
+                                <div class="forum-card-info">                                    
+                                    <div class="forum-card-content">Nothing Found</div>                                    
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+    <!---main end-->
+    
+    <!-- footer starat -->
+    <footer class="footer">
+        <p>&copy; 2026 InnerCircle. All rights reserved.</p>
+    </footer>
+    <!-- footer end -->
+
+    <!-- javascript: call function (Name:filterCategory)  start -->
+    <script>
+        function filterCategory(clickedObj) {
+
+            var selectedCtg = clickedObj.dataset.category;   //get the Add active only to the clicked category value
+            //console.log(selectedCtg);
+            
+            var allList = document.querySelectorAll('.forum-category-list a');  //get all elements matching the selector 
+            
+            for (var i = 0; i < allList.length; i++) {    // Remove active class from all category list 
+                allList[i].classList.remove('active');
+            }
+           
+            clickedObj.classList.add('active');  //Add active only to the clicked category
+
+            var allCards = document.querySelectorAll('.forum-card');   //get all elements matching the selector 
+
+            for (var i = 0; i < allCards.length; i++) {   // data-category value of the card 
+                var card = allCards[i];
+                var cardCtg = card.dataset.category;    // get data-category value of the forum-card
+
+                if (selectedCtg === 'ALL') {           // ALL clicked → show all cards        
+                    card.style.display = 'block';
+
+                } else if (cardCtg === selectedCtg) {  //cardCtg matches selectedCtg → show                     
+                    card.style.display = 'block';
+
+                } else {        
+                    card.style.display = 'none';   //cardCtg not matches selectedCtg → show  → hide 
+                }
+            }
+        }
+</script>
+<!-- javascript: call function (Name:filterCategory)  end -->
+</body>
+
+</html>

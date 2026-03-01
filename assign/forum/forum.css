@@ -1,0 +1,219 @@
+
+body { 
+    background-color: #FAF4E8;
+}
+/*---banner start--*/
+.forum-main {
+    padding-top: 77px;  
+}
+
+.forum-banner {
+    width: 100%;
+    height: 250px;
+    background-image: url('image/banner_f4.png');
+    background-size: cover;
+    background-position: center;
+    border-bottom: 4px solid var(--orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.banner-content h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: white;
+    margin: 0;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+/*---banner end--*/
+
+
+
+/* ---- forum category start ---- */
+.forum-category {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+}
+
+.forum-category h3 {
+    margin: 0 0 20px 0;
+    font-size: 1.2rem;
+    color: var(--blue);
+    font-weight: 800;
+}
+
+.forum-category-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.forum-category-list li { 
+  margin-bottom: 12px; 
+}
+
+.forum-category-list a {
+    display: block;
+    text-decoration: none;
+    color: var(--gray);
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 12px 15px;
+    border: 1px solid #EAECEE;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.forum-category-list a:hover,
+.forum-category-list a.active {
+    background-color: #F8F9F9;
+    color: var(--blue);
+    border-color: #D5DBDB;
+}
+/* ---- forum category end ---- */
+
+/* ---- write button start ---- */
+.btn-write-post{
+    display: flex;
+    justify-content: end;
+  
+}
+.btn-write {
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 25px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-write:hover {
+    background-color: var(--orange);
+    transform: translateY(-2px);
+}
+/* ---- write button end ---- */
+
+
+/* ---- forum card start ---- */
+.forum-card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 25px 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+    border: 1px solid #F2F3F4;
+    border-left: 6px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.forum-card:hover {
+    border-left-color: var(--orange);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+}
+
+.forum-card-category {
+    color: #A0522D;
+    font-weight: 800;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.forum-card-body {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.forum-card-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    flex-shrink: 0;
+}
+
+.forum-card-info { 
+  flex: 1; 
+}
+
+.forum-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.forum-card-title {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 800;
+    transition: color 0.2s ease;
+}
+
+.forum-card-sub {
+    font-size: 0.9rem;
+    color: #888;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    white-space: nowrap;
+}
+
+.forum-card-sub .stats { 
+  color: var(--orange); 
+}
+
+.forum-card-content {
+    font-size: 0.95rem;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.forum-card-date {
+    text-align: right;
+    font-size: 0.85rem;
+    color: #aaa;
+}
+/* ---- forum card end ---- */
+
+/*--- @media start--*/
+@media (max-width: 768px) {
+    .forum-banner { height: 160px; }
+    .banner-content h1 { font-size: 2.5rem; }
+
+    .category-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .category-list li { margin-bottom: 0; }
+
+    .category-list a {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+    }
+
+    .post-header-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .post-title { font-size: 1rem; }
+}
+
+/*--- @media end--*/
