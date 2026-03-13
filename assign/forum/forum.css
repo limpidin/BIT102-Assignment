@@ -196,20 +196,7 @@ body {
 @media (max-width: 768px) {
     .forum-banner { height: 160px; }
     .banner-content h1 { font-size: 2.5rem; }
-    /*
-    .forum-category-list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-    }
 
-    .forum-category-list li { margin-bottom: 0; }
-
-    .fourm-category-list a {
-        padding: 8px 12px;
-        font-size: 0.85rem;
-    }
-    */
     .btn-write {
         padding: 8px 18px;
         font-size: 0.9rem;
