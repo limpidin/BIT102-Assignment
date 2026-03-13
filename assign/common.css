@@ -32,7 +32,8 @@ body {
     transform: scale(1.05); 
 }
 
-.nav-link {
+.nav-link,
+.nav-link:focus {
     color: var(--blue);
     font-weight: 600;
 }
