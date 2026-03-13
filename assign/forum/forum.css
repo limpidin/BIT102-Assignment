@@ -192,11 +192,138 @@ body {
 }
 /* ---- forum card end ---- */
 
+/* ---- Modal box start ---- */
+.modal-overlay {
+    display: none;                       
+    position: fixed;                      
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 9999;                        
+    justify-content: center;             
+    align-items: center;                 
+    padding: 20px;                        
+}
+
+
+.modal-box {
+    background-color: white;
+    padding: 35px 40px;
+    width: 100%;
+    max-width: 540px;                     
+}
+
+
+.modal-header-row {
+    display: flex;
+    justify-content: space-between;      
+    align-items: center;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #F2F3F4;
+    padding: 5px 10px;
+}
+
+.modal-title {
+    color: var(--blue);
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+
+.modal-close-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: var(--blue);
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+
+.modal-close-btn:hover {
+    color: var(--blue);
+    background-color: #F8F9F9;
+}
+
+
+
+.modal-field {
+    margin-bottom: 20px;
+}
+
+.modal-field label {
+    display: block;                       
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: var(--blue);
+    margin-bottom: 8px;
+}
+
+
+.modal-field select,
+.modal-field input,
+.modal-field textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #D5DBDB;
+    padding: 10px 5px;
+    font-size: 0.95rem;
+    color: var(--blue);
+}
+
+
+.modal-field textarea {
+    resize: vertical;                    
+    min-height: 120px;
+}
+
+
+.modal-btn-row {
+    display: flex;
+    justify-content: flex-end;            
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.modal-btn-cancel, .modal-btn-cancel:visited {
+    background-color: #F2F3F4;
+    color: var(--blue);
+}
+
+.modal-btn-save, .modal-btn-save:visited {
+    background-color: var(--blue);
+    color: white;
+}
+
+.modal-btn-cancel ,
+.modal-btn-save{
+    border: none;
+    padding: 10px 24px;
+    border-radius: 25px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-btn-cancel:hover,
+.modal-btn-save:hover
+ {
+    background-color: var(--orange);
+}
+
+
+/* ---- Modal box end ---- */
+
+
 /*--- @media start--*/
 @media (max-width: 768px) {
     .forum-banner { height: 160px; }
     .banner-content h1 { font-size: 2.5rem; }
-
+    
     .btn-write {
         padding: 8px 18px;
         font-size: 0.9rem;

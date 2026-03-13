@@ -195,6 +195,54 @@
 
             </div>
         </div>
+        <!-- forum-card end -->
+        <!---modal box start--> 
+        <div class="modal-overlay" id="modalOverlay">    
+            <div class="modal-box">
+                <div class="modal-header-row">
+                    <h3 class="modal-title">✎ Write Post</h3>
+                    <!-- X button to close modal -->
+                    <button class="modal-close-btn" onclick="closeModal();">✕</button>
+                </div>
+
+                <!-- Modal Form -->
+                <form name="modalForm" id="modalForm" Method="Post" action="forum.html">
+                    <!-- Category Select -->
+                    <div class="modal-field">
+                        <label for="modalCategory">Category</label>
+                        <select id="modalCategory" name="modalCategory" required>
+                            <option value="">-- Select Category --</option>
+                            <option value="READING">READING</option>
+                            <option value="ARTS & PHOTO">ARTS & PHOTO</option>
+                            <option value="MUSIC">MUSIC</option>
+                            <option value="TECH & CODING">TECH & CODING</option>
+                            <option value="SPORTS & FITNESS">SPORTS & FITNESS</option>
+                            <option value="GAMING">GAMING</option>
+                        </select>
+                    </div>
+
+                    <!-- Title Input -->
+                    <div class="modal-field">
+                        <label for="modalTitle">Title</label>
+                        <input type="text" id="modalTitle" name="modalTitle" placeholder="Enter title" required>
+                    </div>
+
+                    <!-- Content Textarea -->
+                    <div class="modal-field">
+                        <label for="modalContent">Content</label>
+                        <textarea id="modalContent" name="modalContent" placeholder="Enter content" rows="5" required></textarea>
+                    </div>
+
+                    <!-- Modal Buttons -->
+                    <div class="modal-btn-row">
+                        <button type="button" class="modal-btn-cancel" onclick="closeModal();">Cancel</button>
+                        <button type="button" class="modal-btn-save"   onclick="saveModal();">Save</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>    
+        <!---modal box end-->
 
     </main>
     <!---main end-->
@@ -237,6 +285,51 @@
                 }
             }
         }
+        
+        /* Open modal - show the overlay */
+        function openModal() {
+            document.getElementById('modalOverlay').style.display = 'flex';
+            document.body.style.overflow = 'hidden'; 
+        }
+
+        /* Close modal - hide the overlay and reset the form */
+        function closeModal() {
+            document.getElementById('modalOverlay').style.display = 'none';
+            document.body.style.overflow = '';        
+            document.getElementById('modalForm').reset(); 
+        }
+
+        function saveModal() {           
+           
+            var frm = document.modalForm; // Reference the form object            
+
+            /* Validation - check if all fields are filled */
+            if (frm.modalCategory.value === '') {
+                alert('Please select a category.');
+                frm.modalCategory.focus();
+                return false;                         
+            }
+
+            if (frm.modalTitle.value.trim().length < 2) {
+                alert('Please enter a title with at least 2 characters.');
+                frm.modalTitle.focus();
+                return false;
+            }
+
+            if (frm.modalContent.value.trim().length < 10) {
+                alert('Please enter some content.(at least 10 characters)');
+                frm.modalContent.focus();
+                return false;
+            }
+
+            /* Confirm before saving */
+            if (confirm('Would you like to save your new post?')){
+                frm.submit();
+            }
+
+            return false;
+        }
+
 </script>
 <!-- javascript: call function (Name:filterCategory)  end -->
 
