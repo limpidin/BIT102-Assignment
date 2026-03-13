@@ -4,7 +4,7 @@ body {
 }
 /*---banner start--*/
 .forum-main {
-    padding-top: 77px;  
+    padding-top: 80px;  
 }
 
 .forum-banner {
@@ -45,7 +45,6 @@ body {
     margin: 0 0 20px 0;
     font-size: 1.2rem;
     color: var(--blue);
-    font-weight: 800;
 }
 
 .forum-category-list {
@@ -163,13 +162,17 @@ body {
     transition: color 0.2s ease;
 }
 
+.forum-card-title:hover { 
+  color: var(--blue); 
+}
+
 .forum-card-sub {
     font-size: 0.9rem;
     color: #888;
     display: flex;
     align-items: center;
     gap: 20px;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
 }
 
 .forum-card-sub .stats { 
@@ -193,27 +196,81 @@ body {
 @media (max-width: 768px) {
     .forum-banner { height: 160px; }
     .banner-content h1 { font-size: 2.5rem; }
-
-    .category-list {
+    /*
+    .forum-category-list {
         display: flex;
         flex-wrap: wrap;
         gap: 8px;
     }
 
-    .category-list li { margin-bottom: 0; }
+    .forum-category-list li { margin-bottom: 0; }
 
-    .category-list a {
+    .fourm-category-list a {
         padding: 8px 12px;
         font-size: 0.85rem;
     }
+    */
+    .btn-write {
+        padding: 8px 18px;
+        font-size: 0.9rem;
+    }
 
-    .post-header-row {
+    .forum-header-row {
         flex-direction: column;
         align-items: flex-start;
         gap: 6px;
     }
 
-    .post-title { font-size: 1rem; }
+    .forum-card-title {
+        font-size: 1rem; 
+    }
+}
+
+@media (max-width: 325px) {
+
+    .btn-write {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+
+
+    .forum-card {
+        padding: 18px 12px;         /* Reduce card padding */
+    }
+
+    .forum-card-avatar {
+        width: 45px;                /* Reduce avatar size */
+        height: 45px;
+    }
+
+    .forum-card-body {
+        gap: 10px;                  /* Reduce gap between avatar and info */
+    }
+
+    .forum-header-row {
+        flex-direction: column;     /* Stack title and stats vertically */
+        align-items: flex-start;
+        gap: 4px;
+    }
+
+    .forum-card-sub {
+        flex-wrap: wrap;            /* Allow stats to wrap */
+        gap: 8px;
+    }
+
+    /* Prevent long words from overflowing the card */
+    .forum-card-title,
+    .forum-card-content,
+    .forum-card-date {
+        word-break: break-all;      /* Force break on any character */
+        overflow-wrap: break-word;  /* Break long words */
+    }
+
+    .forum-card-category { font-size: 0.9rem; }  
+    .forum-card-title    { font-size: 0.85rem; }  
+    .forum-card-sub      { font-size: 0.8rem; }   
+    .forum-card-content  { font-size: 0.8rem; }   
+    .forum-card-date     { font-size: 0.75rem; }  
 }
 
 /*--- @media end--*/
