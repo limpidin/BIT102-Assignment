@@ -88,7 +88,7 @@ body {
     padding: 40px 20px 60px;
 }
 
-.hobby-card {
+.resource-card {
     background-color: white;
     border-radius: 20px;
     overflow: hidden;
@@ -100,8 +100,8 @@ body {
     gap: 0;
 }
 
-/* Hobby Card - 세로 레이아웃 */
-.hobby-card {
+/* resource Card - 세로 레이아웃 */
+.resource-card {
     background-color: white;
     border-radius: 20px;    
     height: 100%;
@@ -109,12 +109,12 @@ body {
     flex-direction: column;
 }
 
-.hobby-card:hover {
+.resource-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(0,0,0,0.12);
 }
 
-.hobby-image {
+.resource-image {
     width: 100%;
     height: 200px;
     position: relative;
@@ -122,16 +122,16 @@ body {
     justify-content: center;
 }
 
-.hobby-image img {
+.resource-image img {
     width: 50%;
     height: 100%;
 }
 
-.hobby-card:hover .hobby-image img {
+.resource-card:hover .resource-image img {
     transform: scale(1.05);
 }
 
-.hobby-content {
+.resource-content {
     padding: 20px 25px 25px 25px;
     display: flex;
     flex: 1;  
@@ -139,14 +139,14 @@ body {
     gap: 10px;
 }
 
-.hobby-title {
+.resource-title {
     font-size: 1.5rem;
     font-weight: 600;
     color: #333;
     margin-bottom: 10px;
 }
 
-.hobby-description {
+.resource-description {
     font-size: 1rem;
     color: #555;
     margin-bottom: 15px;
@@ -188,15 +188,15 @@ body {
         font-size: 0.9rem;
     }
 
-    .hobby-image {
+    .resource-image {
         height: 180px;
     }
 
-    .hobby-title {
+    .resource-title {
         font-size: 1.2rem;
     }
 
-    .hobby-content {
+    .resource-content {
         padding: 20px;
     }
 }
@@ -215,15 +215,15 @@ body {
         font-size: 0.85rem;
     }
 
-    .hobby-image {
+    .resource-image {
         height: 160px;
     }
 
-    .hobby-title {
+    .resource-title {
         font-size: 1.1rem;
     }
 
-    .hobby-description {
+    .resource-description {
         font-size: 0.9rem;
     }
 
