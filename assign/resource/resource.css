@@ -28,6 +28,7 @@ body {
 
 .resource-main {    
     padding-top: 55px;    
+    flex:1;
 }
 
 /* Header Section */

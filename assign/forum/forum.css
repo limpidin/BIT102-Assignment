@@ -1,9 +1,11 @@
 
 body { 
-    background-color: #FAF4E8;
+    background-color: #FAF4E8;  
 }
+
 /*---banner start--*/
 .forum-main {
+    flex:1;
     padding-top: 80px;  
 }
 
@@ -59,9 +61,11 @@ body {
   color:black;
 }
 
-.forum-category-list a {
+.forum-category-list a,
+.forum-category-list a:visited {
     display: block;
     text-decoration: none; 
+    color: black;
     font-weight: 600;
     font-size: 0.95rem;
     padding: 12px 15px;
@@ -76,6 +80,10 @@ body {
     background-color: #F8F9F9;
     color: var(--blue);
     border-color: #D5DBDB;
+}
+
+.forum-category-list a:focus {    
+    color: black;
 }
 
 
