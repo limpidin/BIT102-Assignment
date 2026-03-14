@@ -320,12 +320,6 @@ body {
     cursor: pointer;
 }
 
-.modal-btn-cancel:hover,
-.modal-btn-save:hover
- {
-    background-color: var(--orange);
-}
-
 
 /* ---- Modal box end ---- */
 
