@@ -1,8 +1,10 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile - InnerCircle</title>
     <!--bootstrap css cdn link-->
@@ -18,38 +20,147 @@
     <!--bootstrap js cdn link start-->    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 	<!--bootstrap js cdn link end -->
-    <!---navibar start-->      
-    <nav class="navbar navbar-expand-md fixed-top">   
-        <div class="container-fluid px-4">
-            <a class="navbar-brand brand" href="../main/main.html">InnerCircle</a>
-            <button class="navbar-toggler" type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navMenu">
+    
+    <!-- Hero -->
+    <h1 class="hero">
+        <div class="overlay">
+        </div>
+    </h1>
+    
+    <!---Navbar start-->      
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">InnerCircle</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navMenu">
-                <ul class="navbar-nav gap-3 align-items-center">
-                    <li class="nav-item"><a class="nav-link" href="../main/main.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../forum/forum.html">Forum</a></li>                    
-                    <li class="nav-item"><a class="nav-link" href="../resource/resource.html">Resource</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="../profile/profile.html">Profile</a></li>              
-                    <li class="nav-item"><a class="btn nav-btn" href="../index.html">Sign out</a></li>
+            <div class="collapse navbar-collapse" id="navMain">
+                <ul class="navbar-nav ms-auto gap-lg-2">
+                    <li class="nav-item"><a class="nav-link" href="../main/index.html">MAIN</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../forum/forum.html">FORUM</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../resource/resource.html">RESOURCE</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../profile/profile.html">PROFILE</a></li>
+                    <li class="nav-item ms-lg-3"><a class="btn btn-accent" href="../index.html">SIGN OUT</a></li>
                 </ul>
             </div>
-        </div>        
+        </div>
     </nav>
     <!---navibar end-->
-    <!---main start-->
-    <main class="profile-main">   
-        
-        <p>profile</p>     
-        <p>blah blah blah blah blah blah blah blah</p>
 
-    </main>
-    <!---main end-->
-    <!-- footer starat -->
+    <!-- Profile Header Section -->
+    <div class="content1">
+        <hr>
+        <div class="container-custom">
+            <div class="profile-header-card">
+                <img src="" alt="Profile Picture" class="profile-pic">
+
+            <div class="profile-info">
+                <h2>Qayra Huzir</h2>
+                <p class="username">@qayrah_hobbies</p>
+                <p class="bio">Passionate hobbyist exploring photography, yoga, and coding. Always learning something new!</p>
+
+                <div class="profile-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Hobbies</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">127</span>
+                        <span class="stat-label">Posts</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">342</span>
+                        <span class="stat-label">Connections</span>
+                    </div>
+                </div>
+            </div>
+
+            <button class="edit-profile-btn">Edit Profile</button>
+        </div>
+
+        <!-- About Section -->
+        <h3 class="section-header">About Me</h3>
+        <div class="about-section">
+            <p>Hi! I'm Qay, a hobbyist from Kuala Lumpur. I believe that hobbies are the spice of life! I joined InnerCircle to connect with like-minded people and share our passion for continuous learning and growth.</p>
+        </div>
+
+        <!-- My Hobbies Section -->
+        <div class="content2">
+            <div class="container-custom">
+                <strong class="section-header">My Hobbies</strong>
+            
+            <div class="hobbies-grid">
+                <div class="hobby-card">
+                <h4>Photography</h4>
+                <span class="level">Intermediate</span>
+                <p>Landscape and street photography. Currently exploring night photography techniques.</p>
+            </div>
+
+            <div class="hobby-card">
+                <h4>Reading</h4>
+                <span class="level">Advanced</span>
+                <p>Just started exploring non-fiction novels. Currently reading Paulo Coelho's "The Alchemist".</p>
+            </div>
+
+            <div class="hobby-card">
+                <h4>Coding</h4>
+                <span class="level">Beginner</span>
+                <p>Building web pages with  Visual Studio Code. Learning new frameworks every month.</p>
+            </div>
+        </div>
+
+        <!-- Achievements -->
+        <h3 class="section-header">Achievements</h3>
+        <div class="achievements-grid"></div>
+            <div class="achievement-badge">
+                <div class="badge-icon"></div>
+                <div class="badge-name">100 Posts</div>
+                <div class="badge-date">Feb 2026</div>
+            </div>
+
+            <div class="achievement-badge">
+                <div class="badge-icon"></div>
+                <div class="badge-name">Community Helper</div>
+                <div class="badge-date">Mar 2026</div>
+            </div>
+        </div>
+
+        <!-- Recent Activity -->
+        <h3 class="section-header">Recent Activity</h3>
+        <div class="activity-list">
+            <div class="activity-item">
+                <div class="activity-icon"></div>
+                <div class="activity-content">
+                    <div><span class="action">Posted in Photography Forum:</span> "Golden hour tips for beginners"</div>
+                    <div class="timestamp">2 hours ago</div>
+                </div>
+            </div>
+    
+            <div class="activity-item">
+                <div class="activity-icon"></div>
+                <div class="activity-content">
+                    <div><span class="action">Commented on:</span> "Best VS Code resources for 2026"</div>
+                    <div class="timestamp">Yesterday</div>
+                </div>
+            </div>
+
+            <div class="activity-item">
+                <div class="activity-icon"></div>
+                <div class="activity-content">
+                    <div><span class="action">Connected with</span> Kim Ga-In and 2 others</div>
+                    <div class="timestamp">2 days ago</div>
+                </div>
+            </div>
+        </div>
+    
+
+    <!-- footer start -->
     <footer class="footer">
-        <p>&copy; 2026 InnerCircle. All rights reserved.</p>
+        <div class="container">
+            <p class="text-center mb-0">&copy; 2026 InnerCircle. All rights reserved.</p>
+        </div>
     </footer>
-    <!-- footer end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
 </html>
