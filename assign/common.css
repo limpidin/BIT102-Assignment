@@ -2,9 +2,10 @@
 :root {
     --orange: #FFA62B;
     --skyblue: #86C5FF;
-    --blue: #2E5AA7;
+    --blue: darkturquoise;;
     --cream: #F8E6A0;
     --gray: #566573;
+    --navy: #2E5AA7;
 }
 
 body {
@@ -45,8 +46,8 @@ body {
 }
 
 .nav-btn {
-    border: 2px solid var(--blue);
-    color: var(--blue);
+    border: 2px solid var(--orange);
+    color:white;
     font-weight: 600;
     border-radius: 20px;
     padding: 7px 20px;
@@ -64,13 +65,13 @@ body {
     width: 100%;
     padding: 25px 20px;
     text-align: center;
-    background-color: #FBF0C6;
+    background-color: var(--blue);
     margin-top: 50px;
 }
 
 .footer p {
     margin: 0;
-    color: var(--blue);
+    color: var(--navy);
     font-size: 0.95rem;
     font-weight: 500;
 }
