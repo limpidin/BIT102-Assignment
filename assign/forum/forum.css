@@ -45,6 +45,7 @@ body {
     margin: 0 0 20px 0;
     font-size: 1.2rem;
     color: var(--blue);
+    font-weight: 800;
 }
 
 .forum-category-list {
@@ -85,7 +86,7 @@ body {
   
 }
 .btn-write {
-    background-color: var(--blue);
+    background-color: var(--orange);
     color: white;
     border: none;
     padding: 10px 22px;
@@ -97,7 +98,7 @@ body {
 }
 
 .btn-write:hover {
-    background-color: var(--orange);
+    background-color: var(--blue);
     transform: translateY(-2px);
 }
 /* ---- write button end ---- */
