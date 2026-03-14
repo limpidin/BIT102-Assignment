@@ -40,121 +40,130 @@
         <main class="home-main">        
             <section class="home-banner">
                 <div class="banner-content text-center">
-                    <h1>Welcome to InnerCircle!</h1>                
+                    <h1>Welcome to InnerCircle!</h1>
+                    <!--                
                     <p class="banner-content-sub" >This is a website where hobbyists around the world can gather, discuss their experiences, look up resources and have
                     fun together!</p> 
+                    -->
                 </div>               
             </section> 
 
             <!--Description-->
-            <div class="fade-in">
-                <div class="content1">                    
-                    <div class="container1">
-                        <div class="text">
-                            <strong style="padding-top: 20px; padding-bottom: 20px;">Description</strong>
+            <div class="fade-in">    
+                <div class="container1">
+                    <div class="container-custom">
+                        <!-- Description Section -->
+                        <h3 class="section-header">Description</h3>
+                        <div class="home-header-card">
                             <p>
-                                So, what exactly is a hobbyist and how can you know if you are one? Well, the answer to that is very simple. Do you have something that you like
-                                doing? It can be any sport, studying, programming, yoga or just about anything. If the answer to that question is yes, then congratulations, you
-                                are officially a hobbyist! You can now feel free to visit our other pages, including the user profiles, forums and resources.
+                                So, what exactly is a hobbyist and how can you know if you are one? Well, the answer to that is very simple.                                 
+                                <br>
+                                Do you have something that you like doing?    
+                                <br>                           
+                                It can be any sport, studying, programming, yoga or just about anything. 
+                                <br>                                
+                                If the answer to that question is yes, then congratulations, you are officially a hobbyist! You can now feel free to visit our other pages, including the user profiles, forums and resources.
                             </p>
-                        </div>
-
-                        <!--Images for the description section-->
-                        <div class="images" style="padding-top: 20px; padding-bottom: 20px;">
-                            <img src="image/programming.jpg" alt="programming image">
-                            <img src="image/yoga.jpg" alt="yoga image">
-                            <img src="image/sports.jpg" alt="sports image">
-                            <img src="image/studying.jpg" alt="studying image">
-                        </div>
-                    </div>                
-                </div>
+                            <!--Images for the description section-->
+                            <div class="images" style="padding-top: 20px; padding-bottom: 20px;">
+                                <img src="image/programming.jpg" alt="programming image">
+                                <img src="image/yoga.jpg" alt="yoga image">
+                                <img src="image/sports.jpg" alt="sports image">
+                                <img src="image/studying.jpg" alt="studying image">
+                            </div>
+                        </div>                        
+                    </div>                    
+                </div> 
             </div>
 
             <!--Benefits of hobbies-->
             <div class="fade-in">
-                <div class="content2">
-                    <strong>Benefits?</strong>
-                    <p>So, what are the benefits of being a hobbyist? Why should you pick up a few hobbies and do them during your free time? Well, the benefits include:</p>
-                    
-                    <div class="list-with-image">
-                        <ul class="benefits-list" style="padding-bottom: 20px; text-align: left;">
-                            <li>Increased levels of contentment</li>
-                            <li>Reduced anxiety and stress</li>
-                            <li>Promotes mental health</li>
-                            <li>Helps with healthy aging</li>
-                            <li>Helps to regulate physiological functions</li>
-                        </ul>
+                <div class="container1">
+                    <div class="container-custom">
+                        <!-- Description Section -->
+                        <h3 class="section-header">Benefits?</h3>
+                        <div class="home-header-card">
+                            <p>
+                                So, what are the benefits of being a hobbyist? Why should you pick up a few hobbies and do them during your free time? Well,
+                                 the benefits include:
+                            </p>                            
+                            <div class="list-with-image">
+                                <ul class="benefits-list">
+                                    <li>Increased levels of contentment</li>
+                                    <li>Reduced anxiety and stress</li>
+                                    <li>Promotes mental health</li>
+                                    <li>Helps with healthy aging</li>
+                                    <li>Helps to regulate physiological functions</li>
+                                </ul> 
+                                 <!--Clickme button and hidden text-->
+                                <div class="image-wrapper" style="padding-bottom: 20px;">
+                                    <button class="click-me-btn" onclick="toggleText(event)">
+                                        Click Me!
+                                    </button>
+                                    <div id="hiddenText" class="popup">
+                                        According to a study done by <a href="https://www.tandfonline.com/doi/full/10.1080/01612840.2025.2512006#abstract" target="_blank">Fancourt et al. (2020)</a>,
+                                        older adults with depression increased their odds of recovery by 272% just because they had a hobby!
+                                    </div>
+                                </div>                               
+                            </div>                                                                             
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                        <!--Clickme button and hidden text-->
-                        <div class="image-wrapper" style="padding-bottom: 20px;">
-                            <button class="click-me-btn" onclick="toggleText(event)">
-                                Click Me!
-                            </button>
+             <!--FAQ Section-->
+            <div class="fade-in">    
+                <div class="container1">
+                    <div class="container-custom">
+                        <!-- Description Section -->
+                        <h3 class="section-header">FAQ</h3>                        
+                        <!-- Question 1 -->
+                        <button class="btn btn-outline-primary w-100 text-start mb-2 faq-question"
+                            data-bs-toggle="collapse" data-bs-target="#a1" >
+                        1. What counts as a hobby?
+                        </button>
 
-                            <div id="hiddenText" class="popup">
-                                According to a study done by <a href="https://www.tandfonline.com/doi/full/10.1080/01612840.2025.2512006#abstract" target="_blank">Fancourt et al. (2020)</a>,
-                                older adults with depression increased their odds of recovery by 272% just because they had a hobby!
+                        <div id="a1" class="collapse mb-3">
+                            <div class="card card-body">
+                                A hobby is any activity you enjoy doing in your free time for fun, relaxation, or personal growth.
                             </div>
                         </div>
-                    </div>
-                
-                </div>
-            </div>
 
-            <!--FAQ Section-->
-            <div class="fade-in">
-                <div class="content3">
-                    <strong>FAQ</strong>
-                    <!-- Question 1 -->
-                    <button class="btn btn-outline-primary w-100 text-start mb-2 faq-question"
-                        data-bs-toggle="collapse" data-bs-target="#a1"
-                        style="font-size: 1.3rem; background-color: steelblue;" >
-                    1. What counts as a hobby?
-                    </button>
-
-                    <div id="a1" class="collapse mb-3">
-                        <div class="card card-body" style="background-color: orange;">
-                            A hobby is any activity you enjoy doing in your free time for fun, relaxation, or personal growth.
+                        <!-- Question 2 -->
+                        <button class="btn btn-outline-primary w-100 text-start mb-2 faq-question"
+                            data-bs-toggle="collapse" data-bs-target="#a2">
+                        2. How do I choose the right hobby for me?
+                        </button>
+                        <div id="a2" class="collapse mb-3">
+                            <div class="card card-body">
+                            Start by thinking about what makes you passionate or relaxes you. Consider your interests, available time, and resources.
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- Question 2 -->
-                    <button class="btn btn-outline-primary w-100 text-start mb-2 faq-question"
-                        data-bs-toggle="collapse" data-bs-target="#a2"
-                        style="font-size: 1.3rem; background-color: steelblue;">
-                    2. How do I choose the right hobby for me?
-                    </button>
-                    <div id="a2" class="collapse mb-3">
-                        <div class="card card-body" style="background-color: orange;">
-                        Start by thinking about what makes you passionate or relaxes you. Consider your interests, available time, and resources.
+                        <!-- Question 3 -->
+                        <button class="btn btn-outline-primary w-100 text-start mb-2 faq-question"
+                            data-bs-toggle="collapse" data-bs-target="#a3">
+                        3. Can I have more than one hobby?
+                        </button>
+                        <div id="a3" class="collapse mb-3">
+                            <div class="card card-body">
+                                Absolutely! Many people enjoy multiple hobbies.
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- Question 3 -->
-                    <button class="btn btn-outline-primary w-100 text-start mb-2 faq-question"
-                        data-bs-toggle="collapse" data-bs-target="#a3"
-                        style="font-size: 1.3rem; background-color: steelblue;">
-                    3. Can I have more than one hobby?
-                    </button>
-                    <div id="a3" class="collapse mb-3">
-                        <div class="card card-body" style="background-color: orange;">
-                            Absolutely! Many people enjoy multiple hobbies.
-                        </div>
-                    </div>
-
-                    <!-- Question 4 -->
-                    <button class="btn btn-outline-primary w-100 text-start mb-2 faq-question"
-                        data-bs-toggle="collapse" data-bs-target="#a4"
-                        style="font-size: 1.3rem; background-color: steelblue;">
-                    4. What if I don’t have much free time?
-                    </button>
-                    <div id="a4" class="collapse mb-3">
-                        <div class="card card-body" style="background-color: orange;">
-                            Even a few minutes a day can make a difference. The key is consistency.
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        <!-- Question 4 -->
+                        <button class="btn btn-outline-primary w-100 text-start mb-2 faq-question"
+                            data-bs-toggle="collapse" data-bs-target="#a4">
+                        4. What if I don’t have much free time?
+                        </button>
+                        <div id="a4" class="collapse mb-3">
+                            <div class="card card-body">
+                                Even a few minutes a day can make a difference. The key is consistency.
+                            </div>
+                        </div>              
+                    </div>                    
+                </div> 
+            </div>            
         </main>
         <!--Empty Space--> 
         <!-- footer starat -->
