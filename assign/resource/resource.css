@@ -135,6 +135,9 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .resource-banner { height: 160px; }
+    .banner-content h1 { font-size: 2.5rem; }
+    
     .resource-title {
         font-size: 2.2rem;
     }
